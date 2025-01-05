@@ -104,10 +104,10 @@ def main(dirs = r"C:\Users",
     for i in  subject_to_train :
         starttime = datetime.datetime.now()
         
-        # 手动设置每个 Subject 的随机种子
+        # seed
         seed_n = subject_seeds[i]
         print('seed is ' + str(seed_n))
-        # 调用函数设置随机种子
+        # seed
         set_seed(seed_n)
         
         
@@ -147,7 +147,7 @@ def main(dirs = r"C:\Users",
 
         y_true_pred_dict[i] = df_pred_true
 
-        # 计算指标
+        # Performance Metrics
         accuracy, precision, recall, f1, kappa = calMetrics(true_cpu, pred_cpu)
         subject_result = {
             'accuracy': accuracy * 100,
@@ -167,7 +167,7 @@ def main(dirs = r"C:\Users",
 
         best += bestAcc
         aver += averAcc
-        if i == 0:  # 初始化 yt 和 yp
+        if i == 0:  # Initialize yt (true labels) and yp (predicted labels)
             yt = Y_true
             yp = Y_pred
         else:
