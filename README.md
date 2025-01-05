@@ -29,11 +29,11 @@ I would like to express my sincere gratitude to **[SnailPT](https://github.com/s
 
 ## 📊 **Experimental Results**  
 
-| Dataset         | Task                         | Accuracy (%) | Remark                     |
-|------------------|------------------------------|--------------|----------------------------|
-| BCI IV-2a       | Within-Subject (Cross-Time)  | 84.38        | Adaptive temporal decoding |
-| BCI IV-2b       | Within-Subject (Cross-Time)  | 89.39        | Robust across sessions     |
-| High-Gamma      | High-Frequency Signal Decoding | 95.85       | Captures motor/cognitive features |
+| Dataset         | Task                         | Accuracy (%) | 
+|------------------|------------------------------|--------------|
+| BCI IV-2a       | Within-Subject (Cross-Time)  | 84.38        | 
+| BCI IV-2b       | Within-Subject (Cross-Time)  | 89.39        | 
+| High-Gamma      | High-Frequency Signal Decoding | 95.85       | 
 
 ---
 
@@ -53,9 +53,31 @@ TFCA-Trans holds significant potential for:
 
 ## 📂 **Repository Structure**  
 - `data/` - Preprocessed EEG datasets.  
-- `models/` - Implementation of TFCA-Trans (CNN + Transformer).  
-- `results/` - Experimental results and analysis scripts.  
-- `README.md` - Documentation and usage instructions.  
+- `models/` - Implementation of TFCA-Trans.  
+- `results/` - This folder is reserved for experimental analysis scripts. Results are not uploaded.  
+- `README.md` - Project documentation and overview.  
+
+---
+
+## 📊 **Data Access**  
+The datasets used in this study can be accessed from the following sources:  
+- **BCI IV-2a:** [Competition Dataset](https://www.bbci.de/competition/iv/)  
+- **BCI IV-2b:** [Competition Dataset](https://www.bbci.de/competition/iv/)  
+- **High-Gamma Dataset:** [MOABB Documentation](https://neurotechx.github.io/moabb/generated/moabb.datasets.Schirrmeister2017.html)  
+
+### **Data Preprocessing**  
+For preprocessing steps and details, please refer to my paper:  
+**TFCA-TransNet: Convolutional Time-Frequency Feature Fusion with Channel Attention Transformer Network for EEG-MI Signal Classification.**  
+
+---
+
+## 📝 **Paper Title**  
+> *[TFCA-TransNet: Convolutional Time-Frequency Feature Fusion with Channel Attention Transformer Network for EEG-MI Signal Classification.]*  
+
+---
+
+## 🛠 **Usage Instructions**  
+This repository does not include detailed instructions on model usage, as the implementation code is designed to be self-explanatory. Please refer to the scripts for clear guidance on how to utilize TFCA-Trans.
 
 ---
 
