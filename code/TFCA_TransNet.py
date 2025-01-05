@@ -81,8 +81,7 @@ class PatchEmbeddingCNN(nn.Module):
         return x
     
 
-#通道注意力
-
+#Channel Attention
 
 class SELayer(nn.Module):
 
@@ -159,7 +158,7 @@ class FeedForwardBlock(nn.Sequential):
         )
 
 
-#fenlei
+#Classification Module
 class ClassificationHead(nn.Sequential):
     def __init__(self, flatten_number, n_classes):
         super().__init__()
