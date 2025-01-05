@@ -75,9 +75,19 @@ For preprocessing steps and details, please refer to my paper:
 > *[TFCA-TransNet: Convolutional Time-Frequency Feature Fusion with Channel Attention Transformer Network for EEG-MI Signal Classification.]*  
 
 ---
-
 ## 🛠 **Usage Instructions**  
-This repository does not include detailed instructions on model usage, as the implementation code is designed to be self-explanatory. Please refer to the scripts for clear guidance on how to utilize TFCA-Trans.
+This repository provides a clear and organized structure for using TFCA-Trans. Below is an overview of the main scripts to help you get started:
+
+```plaintext
+code/
+├── TFCA_TransNet.py   # Implementation of the TFCA-Trans model
+├── experiment.py      # Includes data loading and training scripts
+├── utils.py           # Contains utility functions necessary for the workflow
+└── main.py            # Entry point for executing the code
+```
+To run the model, simply execute the main.py script, which ties all the components together:
+python code/main.py
+If you encounter any issues or have questions, feel free to reach out. 😊
 
 ---
 
