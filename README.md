@@ -1,2 +1,68 @@
-# EEG_research
- This study introduces TFCA-TransNet, a deep learning framework for individual EEG-MI signal classification. It combines FFT-derived features, CNN with Channel Attention, and a Transformer encoder to enhance feature representation, culminating in an efficient classifier with a fully connected layer.
+# 🧠 TFCA-Trans: A Novel Approach for EEG Signal Classification  
+
+## 🔍 **Abstract**  
+This study proposes **TFCA-Trans**, a hybrid deep learning framework for EEG signal classification. The model integrates **frequency-domain features** and **time-domain features**, extracted using **Fast Fourier Transform (FFT)** to obtain **amplitude** and **phase information**, along with the raw time-domain data. Three types of features are processed as follows:  
+
+1. **Feature Extraction:**  
+   - A **Convolutional Neural Network (CNN)** equipped with a channel attention mechanism learns the importance of each feature type.  
+   - The channel attention mechanism enhances feature representation at the spatial level.  
+
+2. **Feature Encoding:**  
+   - A **Transformer encoder module** leverages multi-head attention to further explore high-dimensional feature representations, improving the model's ability to handle complex spatiotemporal relationships in the data.  
+
+3. **Classification:**  
+   - A compact and efficient **fully connected layer** constructs the classification module for precise EEG signal decoding.  
+
+---
+
+### 🏆 **Acknowledgment**  
+I would like to express my sincere gratitude to **[SnailPT](https://github.com/snailpt/CTNet.git)** for their invaluable support and contributions to this research. Their work on [CTNet](https://github.com/snailpt/CTNet.git) has greatly inspired and informed my approach in designing TFCA-Trans.  
+
+---
+
+## 🚀 **Highlights**  
+- **Hybrid Feature Extraction:** Combines time-domain and frequency-domain features for a comprehensive EEG representation.  
+- **Transformer Integration:** Enhances the model's capacity to handle high-dimensional spatiotemporal data using multi-head attention.  
+- **High Accuracy:** Demonstrates superior performance on diverse datasets, setting new benchmarks in EEG signal decoding.  
+
+---
+
+## 📊 **Experimental Results**  
+
+| Dataset         | Task                         | Accuracy (%) | Remark                     |
+|------------------|------------------------------|--------------|----------------------------|
+| BCI IV-2a       | Within-Subject (Cross-Time)  | 84.38        | Adaptive temporal decoding |
+| BCI IV-2b       | Within-Subject (Cross-Time)  | 89.39        | Robust across sessions     |
+| High-Gamma      | High-Frequency Signal Decoding | 95.85       | Captures motor/cognitive features |
+
+---
+
+## 🌟 **Future Applications**  
+TFCA-Trans holds significant potential for:  
+- **Brain-Computer Interfaces (BCI):** Improving communication and control systems for individuals with disabilities.  
+- **Neurological Disease Monitoring:** Decoding neural activity for early disease detection and monitoring.  
+- **Personalized Medicine:** Enabling adaptive and targeted healthcare solutions based on individual neural profiles.  
+
+---
+
+## 📷 **Visualization**  
+![Placeholder for model architecture or results visualization](images/model_architecture.png)  
+> *Figure: Model architecture .*  
+
+---
+
+## 📂 **Repository Structure**  
+- `data/` - Preprocessed EEG datasets.  
+- `models/` - Implementation of TFCA-Trans (CNN + Transformer).  
+- `results/` - Experimental results and analysis scripts.  
+- `README.md` - Documentation and usage instructions.  
+
+---
+
+## 📫 **Contact**  
+Feel free to reach out for collaboration or questions:  
+- Email: [tianhuamiao@gmail.com](mailto:tianhuamiao@gmail.com)  
+
+---
+
+**✨ Explore the potential of TFCA-Trans and join the journey of advancing EEG decoding! ✨**
