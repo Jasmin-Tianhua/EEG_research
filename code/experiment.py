@@ -137,7 +137,7 @@ class ExP():
 
     def standardize(self, data):
 
-        part_size = 1000
+        part_size = 1000 #Adjust this according to the sampling frequency and time.
         standardized_parts = []
         
         for i in range(data.size(-1) // part_size):
