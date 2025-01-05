@@ -1,7 +1,7 @@
 # 🧠 TFCA-Trans: A Novel Approach for EEG Signal Classification  
 
 ## 🔍 **Abstract**  
-This study proposes **TFCA-Trans**, a hybrid deep learning framework for EEG signal classification. The model integrates **frequency-domain features** and **time-domain features**, extracted using **Fast Fourier Transform (FFT)** to obtain **amplitude** and **phase information**, along with the raw time-domain data. Three types of features are processed as follows:  
+This study proposes **TFCA-Trans**, a hybrid deep learning framework for EEG signal classification, built on the PyTorch framework. The model integrates **frequency-domain features** and **time-domain features**, extracted using **Fast Fourier Transform (FFT)** to obtain **amplitude** and **phase information**, along with the raw time-domain data. Three types of features are processed as follows:  
 
 1. **Feature Extraction:**  
    - A **Convolutional Neural Network (CNN)** equipped with a channel attention mechanism learns the importance of each feature type.  
