@@ -72,7 +72,7 @@ For preprocessing steps and details, please refer to my paper:
 ---
 
 ## 📝 **Paper Title**  
-> *[TFCA-TransNet: Convolutional Time-Frequency Feature Fusion with Channel Attention Transformer Network for EEG-MI Signal Classification.]*  
+> *[ TFCA-TransNet: Convolutional Time-Frequency Feature Fusion with Channel Attention Transformer Network for EEG Signal Decoding]*  
 
 ---
 ## 🛠 **Usage Instructions**  
