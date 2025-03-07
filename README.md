@@ -1,7 +1,7 @@
 # 🧠 TFCA-Trans: A Novel Approach for EEG Signal Classification  
 
 ## 🔍 **Abstract**  
-This study proposes **TFCA-Trans**, a hybrid deep learning framework for EEG signal classification, built on the PyTorch framework. The model integrates **frequency-domain features** and **time-domain features**, extracted using **Fast Fourier Transform (FFT)** to obtain **amplitude** and **phase information**, along with the raw time-domain data. Three types of features are processed as follows:  
+This study proposes **TFCA-TransNet**, a hybrid deep learning framework for EEG signal classification, built on the PyTorch framework. The model integrates **frequency-domain features** and **time-domain features**, extracted using **Fast Fourier Transform (FFT)** to obtain **amplitude** and **phase information**, along with the raw time-domain data. Three types of features are processed as follows:  
 
 1. **Feature Extraction:**  
    - A **Convolutional Neural Network (CNN)** equipped with a channel attention mechanism learns the importance of each feature type.  
@@ -52,7 +52,6 @@ TFCA-Trans holds significant potential for:
 ---
 
 ## 📂 **Repository Structure**  
-- `data/` - Preprocessed EEG datasets.  
 - `models/` - Implementation of TFCA-Trans.  
 - `results/` - This folder is reserved for experimental analysis scripts. Results are not uploaded.  
 - `README.md` - Project documentation and overview.  
@@ -67,7 +66,7 @@ The datasets used in this study can be accessed from the following sources:
 
 ### **Data Preprocessing**  
 For preprocessing steps and details, please refer to my paper:  
-**TFCA-TransNet: Convolutional Time-Frequency Feature Fusion with Channel Attention Transformer Network for EEG-MI Signal Classification.**  
+** TFCA-TransNet: Convolutional Time-Frequency Feature Fusion with Channel Attention Transformer Network for EEG Signal Decoding**  
 
 ---
 
@@ -80,7 +79,7 @@ This repository provides a clear and organized structure for using TFCA-Trans. B
 
 ```plaintext
 code/
-├── TFCA_TransNet.py   # Implementation of the TFCA-Trans model
+├── TFCA_TransNet.py   # Implementation of the TFCA-TransNet model
 ├── experiment.py      # Includes data loading and training scripts
 ├── utils.py           # Contains utility functions necessary for the workflow
 └── main.py            # Entry point for executing the code
@@ -97,4 +96,4 @@ Feel free to reach out for collaboration or questions:
 
 ---
 
-**✨ Explore the potential of TFCA-Trans and join the journey of advancing EEG decoding! ✨**
+**✨ Explore the potential of TFCA-TransNet and join the journey of advancing EEG decoding! ✨**
