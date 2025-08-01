@@ -116,7 +116,7 @@ def load_data_LOSO(dir_path, dataset_type, subject):
 
 def load_data(dir_path, dataset_type, n_sub, mode='train'):
     '''
-    加载mat格式的数据返回data和label的ndarray
+    Load .mat file
 
     Parameters
     ----------
