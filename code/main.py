@@ -138,7 +138,7 @@ def main(dirs = r"C:\Users",
 
         bestAcc, averAcc, Y_true, Y_pred, df_process, best_epoch = exp.train()
 
-        # 将 Y_true 和 Y_pred 转换为 CPU 张量并转换为 numpy 格式
+        # Convert to NumPy format
         true_cpu = Y_true.cpu().numpy().astype(int)
         pred_cpu = Y_pred.cpu().numpy().astype(int)
 
