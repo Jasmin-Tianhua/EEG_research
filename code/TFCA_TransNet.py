@@ -36,7 +36,7 @@ class PatchEmbeddingCNN(nn.Module):
 
         self.cnn_cat = nn.Sequential(
             # temporal conv kernel size 64=0.25fs
-            nn.Conv2d(3, f1, (1, kernel_size), (1, 1), padding='same', bias=False), #在第二个维度叠加
+            nn.Conv2d(3, f1, (1, kernel_size), (1, 1), padding='same', bias=False), 
             nn.BatchNorm2d(f1),
             # channel depth-wise conv
             nn.Conv2d(f1, f2, (number_channel, 1), (1, 1), groups=f1, padding='valid', bias=False), # 
@@ -65,9 +65,9 @@ class PatchEmbeddingCNN(nn.Module):
         
     def forward(self, x: Tensor) -> Tensor:
         b, _, _, _ = x.shape
-        time_feature = x[:, :, :, :1000]
-        magnitude_feature = x[:, :, :, 1000:2000]
-        phase_feature = x[:, :, :, 2000:]
+        time_feature = x[:, :, :, :1000] #time feature
+        magnitude_feature = x[:, :, :, 1000:2000] # magnitude feature
+        phase_feature = x[:, :, :, 2000:] #phase feature
     #2d 
 
         x = torch.cat([time_feature, magnitude_feature, phase_feature], dim=1)
@@ -296,7 +296,7 @@ class EEGTransformer(nn.Module):
 
         features = cnn + features
 
-        # features = self.cnn_output(features)
+        # features = self.cnn_output(features) #if
         out = self.classification(self.flatten(features))
 
         return features, out
