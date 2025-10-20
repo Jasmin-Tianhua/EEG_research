@@ -16,7 +16,7 @@ This study proposes **TFCA-TransNet**, a hybrid deep learning framework for EEG 
 ---
 
 ### 🏆 **Acknowledgment**  
-I would like to express my sincere gratitude to **[SnailPT](https://github.com/snailpt/CTNet.git)** for their invaluable support and contributions to this research. Their work on [CTNet](https://github.com/snailpt/CTNet.git) has greatly inspired and informed my approach in designing TFCA-Trans.  
+I would like to express my sincere gratitude to SnailPT for their invaluable support and contributions to this research. Their work on CTNet has greatly inspired and informed my approach in designing TFCA-Trans.
 
 ---
 
