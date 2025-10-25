@@ -66,7 +66,7 @@ The datasets used in this study can be accessed from the following sources:
 
 ### **Data Preprocessing**  
 For preprocessing steps and details, please refer to my paper:  
-** TFCA-TransNet: Convolutional Time-Frequency-Spatial Feature Fusion with Channel Attention Transformer Network for EEG-MI Signal Decoding **  
+*TFCA-TransNet: Convolutional Time-Frequency-Spatial Feature Fusion with Channel Attention Transformer Network for EEG-MI Signal Decoding*
 
 ---
 
